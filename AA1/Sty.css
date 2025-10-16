@@ -170,17 +170,16 @@ main {
 .box-introducao > img{
     margin: 15px 0;
 }
-.box-introducao > h2, .box-objetivo > h2, .box-sobre > h2, .box-novidades > h2{
+.box-introducao > h2, .box-objetivo > h2, .box-sobre > h2, .box-novidades > h2, .box-inicio > h2{
     text-align: center;
     margin-bottom: 0.5em;
 }
-.box-introducao > p, .box-objetivo > p, .box-novidades > p {
+.box-introducao > p, .box-objetivo > p, .box-novidades > p, .box-inicio > p {
     text-indent: 2em;
     line-height: 1.5;
     margin-bottom: 0.6em;
     text-align: justify;
 }
-
 
 /* Customização do Sobre */
 .box-sobre {
@@ -205,7 +204,7 @@ main {
 }
 
 /* Customização de Objetivo*/
-.box-objetivo, .box-novidades {
+.box-objetivo, .box-novidades, .box-inicio{
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -218,6 +217,9 @@ main {
     background-color: white;
     margin: 25px 0;  
     text-align: justify;
+}
+.box-inicio{
+    width: 30%;
 }
 
 /* Customização de Contato*/
