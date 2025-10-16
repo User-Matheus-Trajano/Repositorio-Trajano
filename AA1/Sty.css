@@ -156,6 +156,16 @@ main {
     min-height: 100vh;
 
 }
+
+.custom-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 .box-introducao{
     display: flex;
     justify-content: center;
@@ -183,6 +193,16 @@ main {
     line-height: 1.5;
     margin-bottom: 0.6em;
     text-align: justify;
+}
+
+.observacao {
+    background-color: #f8f8f8;
+    border-left: 4px solid #0077ff;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-size: 0.95em;
+    color: #333;
+    border-radius: 8px;
 }
 
 /* Customização do Sobre */
