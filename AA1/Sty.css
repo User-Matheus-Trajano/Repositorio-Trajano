@@ -197,7 +197,7 @@ main {
     text-align: center;
     margin-bottom: 0.5em;
 }
-.box-introducao > p, .box-objetivo > p, .box-novidades > p, .box-inicio > p {
+.box-introducao > p, .box-objetivo > p, .box-novidades > p, .box-inicio > p, .box-sobre > p{
     text-indent: 2em;
     line-height: 1.5;
     margin-bottom: 0.6em;
@@ -226,8 +226,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
     background-color: white;
-    margin: 25px 0;  
-    text-align: justify;
+    margin: 25px 0;
 }
 
 .box-sobre > h3{
