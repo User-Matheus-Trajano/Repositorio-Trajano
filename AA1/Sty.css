@@ -230,8 +230,12 @@ main {
     text-align: justify;
 }
 
+.box-sobre > h3{
+    text-align: start;
+}
  
 .box-topico > ul {
+    text-align: start;
     margin-left: 20px;
     margin-bottom: 15px;
 }
