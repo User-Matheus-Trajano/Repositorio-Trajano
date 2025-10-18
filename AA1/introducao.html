@@ -14,13 +14,13 @@
           <h1>Introdução</h1>
       </div>
 
-        <nav class="nav-header">
+        <nav class="nav-header" aria-label="Menu principal do site">
           <ul class="ul-header">
-            <li><a href="introducao.html">Introdução</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="objetivo.html">Inspirações e Metas</a></li>
-            <li><a href="novidades.html">Novidades</a></li>
-            <li><a href="contato.html">Contato</a></li>
+          <li><a href="introducao.html" title="Ir para a página de introdução">Introdução</a></li>
+          <li><a href="sobre.html" title="Ir para a página sobre">Sobre</a></li>
+          <li><a href="objetivo.html" title="Ver inspirações e metas">Inspirações e Metas</a></li>
+          <li><a href="novidades.html" title="Ler as novidades">Novidades</a></li>
+          <li><a href="contato.html" title="Entrar em contato">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -30,31 +30,33 @@
           <h2>Introdução</h2>
         </div>
         <div class="box-hamburguer">
-          <button class="btn-hamburguer" id="btn-hamburguer">&#9776;</button>
+          <button class="btn-hamburguer" id="btn-hamburguer" aria-label="Abrir menu de navegação">
+          &#9776;
+          </button>
         </div>
       </div>
     </header>
 
     <!-- Menu do Hamburguer -->
     <div class="menu-display">
-      <nav class="nav-menu-mob">
+      <nav class="nav-menu-mob" aria-label="Menu móvel do site">
         <ul class="ul-menu-mob">
-          <li><a href="introducao.html">Introdução</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="objetivo.html">Inspirações e Metas</a></li>
-          <li><a href="novidades.html">Novidades</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="introducao.html" title="Ir para a página de introdução">Introdução</a></li>
+          <li><a href="sobre.html" title="Ir para a página sobre">Sobre</a></li>
+          <li><a href="objetivo.html" title="Ver inspirações e metas">Inspirações e Metas</a></li>
+          <li><a href="novidades.html" title="Ler as novidades">Novidades</a></li>
+          <li><a href="contato.html" title="Entrar em contato">Contato</a></li>
         </ul>
       </nav>
       <div class="box-menu-fechar">
-        <button class="btn-fechar" id="btn-fechar">&#10006;</button>
+        <button class="btn-fechar" id="btn-fechar" aria-label="Fechar menu de navegação">&#10006;</button>
       </div>
     </div>
 
     <main>
       <div class="box-main">
-        <section class="box-introducao box-base">
-          <img class="custom-img" src="Imgs/MypersonMenor.jpeg" alt="Foto de uma pessoa" width="200" height="auto"/>
+        <section class="box-introducao box-base" aria-labelledby="titulo-intro">
+          <img class="custom-img" src="Imgs/MypersonMenor.jpeg" alt="Foto de Matheus Trajano de Oliveira"/>
 
           <h2 class="custom-h2">Olá! Me chamo Matheus Trajano de Oliveira</h2>
           <p class="custom-p">
@@ -79,13 +81,13 @@
             infraestrtura de rede, manutenção ou softwares mais complexos além
             dos mais comuns (Excel, Word, Power Point entre outros).
           </p>
-          <aside class="observacao"><strong>Obs.:</strong> A foto foi tirada na data de conclusão do meu ensino médio, após ter realizado um projeto final.</aside>
+          <aside class="observacao" aria-label="Observação sobre a foto" ><strong>Obs.:</strong> A foto foi tirada na data de conclusão do meu ensino médio, após ter realizado um projeto final.</aside>
         </section>
       </div>
     </main>
 
     <footer>
-      <div class="div-footer">
+      <div class="div-footer"  aria-label="Rodapé do site">
         <p>© 2025 - Criado por Matheus Trajano</p>
       </div>
     </footer>
