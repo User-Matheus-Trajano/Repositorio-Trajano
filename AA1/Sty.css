@@ -4,12 +4,15 @@
     margin: 0;
     padding: 0;
 }
+
 html, body {
     min-height: 100%;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
@@ -17,6 +20,7 @@ h1, h2, h3 {
 :root {
   --cor-night:#0F0F0F;
 }
+
 header{
     display: flex;
     justify-content: center;
@@ -46,6 +50,7 @@ header{
     color: white;
     font-size: 1.8em;
 }
+
 .menu-display {
     display: flex;
     align-items: center;
@@ -58,20 +63,25 @@ header{
     transition: top 1s ease;
     background-color: var(--cor-night);
 }
+
 .menu-display.ativo {
    top:0;
 }
+
 .nav-menu-mob {
     width: 50%;
 }
+
 .ul-menu-mob > li {
     font-size: 1.4em;
 }
+
 .ul-header > li, .ul-menu-mob > li{
     list-style: none;
     text-align: center;
     padding: 10px;
 }
+
 .ul-header li > a,.ul-menu-mob li > a{
     color: white;
     text-decoration: none; 
@@ -92,9 +102,11 @@ header{
     justify-content: flex-end;
     
 }
+
 .no-scroll {
     overflow: hidden;
 }
+
 .logotipo {
     display: flex;
     color: white;
@@ -108,17 +120,20 @@ header{
 .div-header-desktop {
     display: none;
 }
+
 @media (min-width: 850px){
     
 .div-header-mob{
     display: none;
-}    
+}
+
 .div-header-desktop {
     display: flex;
     justify-content: center;
     width: 90%;
     max-width: 1300px;
 }
+
 .logotipo {
     display: flex;
     align-items: center;
@@ -126,9 +141,11 @@ header{
     width: 30%;
     text-align: center;
 }
+
 .nav-header{
     width: 70%;
 }
+
 .ul-header{
     width: 100%;
     height: 100%;
@@ -138,16 +155,51 @@ header{
     flex-direction: row;
     font-size: 1.2em;
 }
+
 .ul-header > li{
     list-style: none;
     text-align: center;
     padding: 10px;
 }
+
 .ul-header li > a{
     color: white;
     text-decoration: none;
-    
 }
+}
+
+/* Diversos */
+
+.box-introducao, .box-objetivo, .box-novidades, .box-contato, .box-sobre {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 300px;
+  max-width: 700px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  background-color: white;
+  margin: 25px 0;
+}
+
+.custom-h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.custom-p {
+    text-indent: 2em;
+    line-height: 1.5;
+    margin-bottom: 0.6em;
+    text-align: justify;
+}
+
+.box-topico > ul {
+    text-align: start;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 /* Main */
@@ -157,51 +209,27 @@ main {
     min-height: 100vh;
     padding-top: 60px;
 }
-/* Customização do Introdução */
+
 .box-main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
 }
 
+/* Customização do Introdução */
+
+.box-introducao {
+    align-items: center;
+}
 .custom-img {
     display: block;
-    margin: 0 auto;
+    margin: 15px 0;
     width: 200px;
     max-width: 80%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-.box-introducao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    min-width: 300px;
-    max-width: 700px;
-    padding: 12px;
-    border: 1px black solid;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
-    background-color: white;
-    margin: 25px 0;
-}
-.box-introducao > img{
-    margin: 15px 0;
-}
-.box-introducao > h2, .box-objetivo > h2, .box-sobre > h2, .box-novidades > h2, .box-inicio > h2{
-    text-align: center;
-    margin-bottom: 0.5em;
-}
-.box-introducao > p, .box-objetivo > p, .box-novidades > p, .box-inicio > p, .box-sobre > p{
-    text-indent: 2em;
-    line-height: 1.5;
-    margin-bottom: 0.6em;
-    text-align: justify;
 }
 
 .observacao {
@@ -214,92 +242,40 @@ main {
     border-radius: 8px;
 }
 
-/* Customização do Sobre */
-.box-sobre {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    min-width: 300px;
-    max-width: 700px;
-    padding: 12px;
-    border: 1px black solid;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
-    background-color: white;
-    margin: 25px 0;
-}
-
-.box-sobre > h3{
-    text-align: start;
-}
- 
-.box-topico > ul {
-    text-align: start;
-    margin-left: 15px;
-    margin-bottom: 15px;
-}
-
-/* Customização de Objetivo*/
-.box-objetivo, .box-novidades, .box-inicio{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    min-width: 300px;
-    max-width: 700px;
-    padding: 12px;
-    border: 1px black solid;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
-    background-color: white;
-    margin: 25px 0;  
-    text-align: justify;
-}
-.box-inicio{
-    width: 30%;
-}
-
-/* Customização de Contato*/
-.box-contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    min-width: 300px;
-    max-width: 700px;
-    padding: 12px;
-    border: 1px black solid;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px black;
-    background-color: white;
-    margin: 25px 0;
-}
+/* Customização de Contato */
 .box-contato > form {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-.box-contato > form h2{
-    text-align: center;
-    margin-bottom: 0.5em;
+
+.box-contato{
+    width: 40%;
+    align-items: center;
 }
+
 .box-contato > form input{
     padding: 5px;
     margin-bottom: 0.9em;
 }
+
 .form-btn {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.box-contato > form input[type= "button"]{
+
+.box-contato > form input[type= "submit"]{
+    padding: 5px;
     margin-top: 5px;
     width:30%;
 }
+
 .box-contato > form label {
     font-size: 1.1em;
     margin-bottom: 1px;
 }
+
 .link-com-icone img {
   width: 25px;
   vertical-align: middle;
