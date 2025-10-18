@@ -170,7 +170,7 @@ header{
 
 /* Diversos */
 
-.box-introducao, .box-objetivo, .box-novidades, .box-contato, .box-sobre {
+.box-introducao, .box-objetivo, .box-novidades, .box-contato, .box-sobre, .box-inicio {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -200,6 +200,13 @@ header{
     text-align: start;
     margin-left: 15px;
     margin-bottom: 15px;
+}
+
+/* Início */
+.box-inicio {
+    align-items: center;
+    text-align: justify;
+    width: 30%;
 }
 
 /* Main */
