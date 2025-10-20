@@ -60,7 +60,7 @@ header{
 }
 
 .list-mob li:hover {
-    transform: scale(1.1);      /* aumenta o botão em 10% */
+    transform: scale(1.1);
 }
 
 .logotipo {
