@@ -26,9 +26,7 @@ header{
     justify-content: center;
     width: 100%;
     background-color:var(--cor-night);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    
 }
 
 .div-header-mob{
@@ -45,9 +43,16 @@ header{
 }
 
 .ul-header li > a, .list-mob li > a {
-    transition: all 0.3s ease;
     color: white;
     text-decoration: none; 
+}
+
+.ul-header li > a:active, 
+.list-mob li > a:active {
+    color: #0F0F0F;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px;
 }
 
 .list-mob li {
