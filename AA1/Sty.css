@@ -25,9 +25,8 @@ header{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 60px;
     background-color:var(--cor-night);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
@@ -37,74 +36,22 @@ header{
     display: flex;
     width: 90%;
     align-items: center;
-    min-width: 320px;
-}
-
-.box-menu-fechar {
-    padding: 10px;
-}
-
-.btn-hamburguer, .btn-fechar {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.8em;
-}
-
-.menu-display {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: -100%;
-    transition: top 1s ease;
-    background-color: var(--cor-night);
 }
 
-.menu-display.ativo {
-   top:0;
-}
-
-.nav-menu-mob {
-    width: 50%;
-}
-
-.ul-menu-mob > li {
-    font-size: 1.4em;
-}
-
-.ul-header > li, .ul-menu-mob > li{
+.ul-header > li, .list-mob > li{
     list-style: none;
     text-align: center;
     padding: 10px;
 }
 
-.ul-header li > a,.ul-menu-mob li > a{
+.ul-header li > a, .list-mob li > a {
     color: white;
     text-decoration: none; 
 }
 
-.div-header-mob{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-
-}    
-  
-.box-hamburguer {
-    display: flex;
-    width: 30%;
-    justify-content: flex-end;
-    
-}
-
-.no-scroll {
-    overflow: hidden;
+.list-mob li {
+    text-align: center;
 }
 
 .logotipo {
@@ -114,6 +61,7 @@ header{
     width: 70%;
     z-index: 2;
 }
+
 
 
 /* Resolução PC */
