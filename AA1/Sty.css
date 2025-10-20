@@ -28,7 +28,6 @@ header{
     background-color:var(--cor-night);
     position: sticky;
     top: 0;
-    left: 0;
     z-index: 10;
 }
 
@@ -46,12 +45,17 @@ header{
 }
 
 .ul-header li > a, .list-mob li > a {
+    transition: all 0.3s ease;
     color: white;
     text-decoration: none; 
 }
 
 .list-mob li {
-    text-align: center;
+    font-size: 1.4em;
+}
+
+.list-mob li:hover {
+    transform: scale(1.1);      /* aumenta o botão em 10% */
 }
 
 .logotipo {
@@ -62,14 +66,12 @@ header{
     z-index: 2;
 }
 
-
-
 /* Resolução PC */
 .div-header-desktop {
     display: none;
 }
 
-@media (min-width: 850px){
+@media (min-width: 780px){
     
 .div-header-mob{
     display: none;
@@ -162,7 +164,7 @@ main {
     width: 100%;
     background-color: #5BC3EB;
     min-height: 100vh;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .box-main {
